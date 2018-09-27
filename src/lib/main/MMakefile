@@ -1,0 +1,12 @@
+#
+# MMakefile - configuration Makefile for library PluginWindow_main
+# Application class name: PluginWindow
+# Creation date: Mon Feb 21 17:57:01 MET 2000
+#
+LOCAL_CFLAGS =
+LOCAL_DEFINES = $(TOOLKIT_DEFINES)
+LOCAL_INCLUDES = $(TOOLKIT_INCLUDES)
+LOCAL_LIBRARIES = $(PluginWindow_PLUGIN_LIBS) $(Gocad_PLUGIN_LIBS)
+LDLIBS = $(GRAPHIC_SYSLIBS) $(TOOLKIT_SYSLIBS) $(SYSLIBS)
+
+make:; @$(GOCADROOT)/devtools/Makemake -n PluginWindow_main -l 

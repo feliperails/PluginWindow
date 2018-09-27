@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="version">
+      <UniqueIdentifier>{b4e9787e-4c27-45ab-8861-9828306a9de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="version\Output Files">
+      <UniqueIdentifier>{fdc042e5-b5e5-4409-9ef4-3555dbe7248e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="version\Script">
+      <UniqueIdentifier>{2d01f254-d8b6-4f17-b8c2-63b3110d9ef9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\lib\app-defaults\Product.defs">
+      <Filter>version\Output Files</Filter>
+    </None>
+    <None Include="..\doc\VERSION">
+      <Filter>version\Output Files</Filter>
+    </None>
+    <None Include="configure.pl">
+      <Filter>version\Script</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\PluginWindow\version.h">
+      <Filter>version\Output Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <configure Include="..\config\project.defs">
+      <Filter>version</Filter>
+    </configure>
+  </ItemGroup>
+</Project>

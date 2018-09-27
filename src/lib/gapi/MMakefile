@@ -1,0 +1,12 @@
+#
+# MMakefile - configuration Makefile for library PluginWindow_gapi
+# Application class name: PluginWindow
+# Creation date: Mon Feb 21 17:54:17 MET 2000
+#
+LOCAL_CFLAGS =
+LOCAL_DEFINES =
+LOCAL_INCLUDES =
+LOCAL_LIBRARIES = $(Gocad_BATCH_LIBS)
+LDLIBS = $(SYSLIBS)
+
+make:; @$(GOCADROOT)/devtools/Makemake -n PluginWindow_gapi -l 

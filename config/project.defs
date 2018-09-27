@@ -1,0 +1,82 @@
+
+############################################################################
+# project.defs: common project descriptions
+# This file describes the current project. Please document these fields
+# carefully as they will be used by the Gocad plugin manager to load your
+# plugin.
+############################################################################
+
+# Description
+# Plug-in name, uniquely identifies the project
+PROJECT_NAME = PluginWindow
+
+# Plug-in official name, displayed to the end-user
+PROJECT_TITLE = PluginWindow
+
+# Short project description
+# HTML tags allowed (use \ to do a multiline description)
+PROJECT_DESCRIPTION = Please give\n\
+a short description of PluginWindow
+
+# Vendor information
+PROJECT_VENDOR = Enter\n\
+vendor information here
+
+# Contact Information
+# Pointer to the project home page
+PROJECT_URL = http://www.acme.com/projects/PluginWindow
+PROJECT_CONTACTS = Please give a link\n\
+to the support site or project contact
+
+# Project/Plug-in release date
+PROJECT_RELEASE_DATE = now
+
+# Graphics
+# Project/Plug-in logo (32x32 pixels pixmap)
+PROJECT_LOGO =
+# Project/Plug-in image (64x64 pixels pixmap/jpg image)
+PROJECT_IMAGE =
+
+# Functions
+# Project functions
+PROJECT_FUNCTIONS =\
+<function>\
+    <name>PluginWindow Option</name>\
+</function>
+
+# Version
+# Complete Plug-in version information
+# Legal values for PROJECT_VERSION_STATUS are:
+#   - a[1-9]+ for alpha versions
+#   - b[1-9]+ for beta versions
+#   - c[1-9]+ for candidate releases
+#   - p[1-9]+ for patches
+#   - (empty) for official releases
+# ex. PROJECT_VERSION_STATUS = a1 p3
+#
+PROJECT_VERSION_MAJOR = 1
+PROJECT_VERSION_MINOR = 0
+PROJECT_VERSION_BUGFIX = 0
+PROJECT_VERSION_STATUS = a1
+
+# Human readable string for PROJECT_VERSION_STATUS
+PROJECT_RELEASE_STATUS =
+
+# Project/Plug-in binary compatibility: Latest version of this plug-in
+# that this version is binary compatible with. If this version breaks
+# binary compatibility with earlier versions, PROJECT_COMPAT should
+# be the same as the current version.
+PROJECT_COMPAT = 1.0.0a1
+
+# Project requirements:
+# list of plugins required for this project to work. 
+# Format: PluginName1;PluginName2;PluginName3 etc ...
+# ex.: PROJECT_REQUIRES = Filters;Gocad
+PROJECT_DEPENDENCIES = Gocad
+
+# Additional information.
+# This field is provided for customizing release information
+# with site dependent information.
+PROJECT_LOCAL_INFO =
+
+PROJECT_NAMESPACE = PluginWindow

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <!-- The x64Debug.prop is slightly different of the x64Release.props. Normally we should import x64DebugBase.props,
+         but it is loading debug versions of 3rd-party toolkits whereas the devkit has been linked against the release version. -->
+    <Import Project="$(GOCADROOT)\config\platform\windows-all-v15\GocadShared\DebugBase.props" />
+    <Import Project="$(GOCADROOT)\config\platform\windows-all-v15\GocadShared\Boost_x64Release.props" />
+    <Import Project="$(GOCADROOT)\config\platform\windows-all-v15\GocadShared\SQLite_x64Release.props" />
+    <Import Project="$(GOCADROOT)\config\platform\windows-all-v15\GocadShared\Qt_core_x64Release.props" />
+    <Import Project="PluginWindow_CustomDefs.props" />
+    <Import Project="$(GOCADROOT)\config\platform\windows-all-v15\GocadShared\RuntimeRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <OUTPUT_DIRECTORY>Win_x64_6.1_v15_debug</OUTPUT_DIRECTORY>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <_PropertySheetDisplayName>PluginWindow - Debug | x64</_PropertySheetDisplayName>
+        <OutDir>$(SolutionDir)bin\$(OUTPUT_DIRECTORY)\</OutDir>
+        <IntDir>$(SolutionDir)lib\$(OUTPUT_DIRECTORY)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+</Project>

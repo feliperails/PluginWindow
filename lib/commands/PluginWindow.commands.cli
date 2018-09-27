@@ -1,0 +1,8 @@
+
+#ifndef PluginWindow_commands_cli
+#define PluginWindow_commands_cli
+
+#include <lib/commands/Gocad.commands.cli>
+#include <lib/commands/PluginWindow.cli>
+
+#endif

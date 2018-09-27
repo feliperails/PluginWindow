@@ -1,0 +1,46 @@
+
+!***************************************************************************
+!
+! PluginWindow resource file:
+! This file defines resources specific to your plugin.
+!
+!***************************************************************************
+
+!
+! User interface definition files
+!
+ui_definition_files:: \
+PluginWindow.attributes \
+PluginWindow.menubars
+
+!
+! Help manager resource file.
+!
+!help_definition_file:: PluginWindow.help
+
+!
+! Other common resources redefined by PluginWindow
+! **************************************************
+!
+
+!
+! List of programs identifier and unix commands. The program identifier
+! will be shown in the input filter option menu of the Load object window.
+! The unix command should output the gocad data in stdout and the last
+! argument of the command will be the input filename selected by the user.
+!
+load_converters::
+
+!
+! list of program identifier and unix commands. The program identifier
+! will be shown in the output filter option menu of the SaveAs window.
+! The unix command will receive the gocad data in stdin and the last
+! argument of the command will be the output filename selected by the user.
+!
+save_converters::
+
+!
+! Add resources specific to PluginWindow here
+!**********************************************
+!
+

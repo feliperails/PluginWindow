@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CLI", "src\lib\CLI\CLI.vcxproj", "{6AC45B97-2EA0-421E-A9A3-ECFE2043F04B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XCLI", "src\lib\XCLI\XCLI.vcxproj", "{3A080B24-0765-4585-B7E7-47411C34255F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gapi", "src\lib\gapi\gapi.vcxproj", "{C9BB3F52-9709-4AA0-B59E-59F44AE39240}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "main", "src\lib\main\main.vcxproj", "{156190D6-F232-41C7-B19B-D7899330D45C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "init_build", "devtools\init_build.vcxproj", "{1E55C5A3-A50E-485A-AD4E-B3E33FAF2052}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "doc", "doc\doc.vcxproj", "{F3387DE5-0308-470B-99FD-20678C8D3327}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AC45B97-2EA0-421E-A9A3-ECFE2043F04B}.Debug|x64.ActiveCfg = Debug|x64
+		{6AC45B97-2EA0-421E-A9A3-ECFE2043F04B}.Debug|x64.Build.0 = Debug|x64
+		{6AC45B97-2EA0-421E-A9A3-ECFE2043F04B}.Release|x64.ActiveCfg = Release|x64
+		{6AC45B97-2EA0-421E-A9A3-ECFE2043F04B}.Release|x64.Build.0 = Release|x64
+		{3A080B24-0765-4585-B7E7-47411C34255F}.Debug|x64.ActiveCfg = Debug|x64
+		{3A080B24-0765-4585-B7E7-47411C34255F}.Debug|x64.Build.0 = Debug|x64
+		{3A080B24-0765-4585-B7E7-47411C34255F}.Release|x64.ActiveCfg = Release|x64
+		{3A080B24-0765-4585-B7E7-47411C34255F}.Release|x64.Build.0 = Release|x64
+		{C9BB3F52-9709-4AA0-B59E-59F44AE39240}.Debug|x64.ActiveCfg = Debug|x64
+		{C9BB3F52-9709-4AA0-B59E-59F44AE39240}.Debug|x64.Build.0 = Debug|x64
+		{C9BB3F52-9709-4AA0-B59E-59F44AE39240}.Release|x64.ActiveCfg = Release|x64
+		{C9BB3F52-9709-4AA0-B59E-59F44AE39240}.Release|x64.Build.0 = Release|x64
+		{156190D6-F232-41C7-B19B-D7899330D45C}.Debug|x64.ActiveCfg = Debug|x64
+		{156190D6-F232-41C7-B19B-D7899330D45C}.Debug|x64.Build.0 = Debug|x64
+		{156190D6-F232-41C7-B19B-D7899330D45C}.Release|x64.ActiveCfg = Release|x64
+		{156190D6-F232-41C7-B19B-D7899330D45C}.Release|x64.Build.0 = Release|x64
+		{1E55C5A3-A50E-485A-AD4E-B3E33FAF2052}.Debug|x64.ActiveCfg = Debug|x64
+		{1E55C5A3-A50E-485A-AD4E-B3E33FAF2052}.Debug|x64.Build.0 = Debug|x64
+		{1E55C5A3-A50E-485A-AD4E-B3E33FAF2052}.Release|x64.ActiveCfg = Release|x64
+		{1E55C5A3-A50E-485A-AD4E-B3E33FAF2052}.Release|x64.Build.0 = Release|x64
+		{F3387DE5-0308-470B-99FD-20678C8D3327}.Debug|x64.ActiveCfg = Debug|x64
+		{F3387DE5-0308-470B-99FD-20678C8D3327}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,47 @@
+
+############################################################################
+#
+# File: libraries.defs
+# This file contains the definition of all libraries in PluginWindow.
+#
+############################################################################
+
+############################################################################
+# PluginWindow batch libraries including Gapi and libraries before Gapi
+############################################################################
+
+PluginWindow_BATCH_LIBS =\
+    -lPluginWindow_gapi
+
+PluginWindow_BATCH_LIBDEPENDS =\
+    $(PluginWindow_LIBDIR)/libPluginWindow_gapi.$(LIB_SUFFIX)
+
+############################################################################
+# PluginWindow libraries that must be linked with a plugin
+############################################################################
+
+PluginWindow_PLUGIN_LIBS =\
+    -lPluginWindow_XCLI\
+    -lPluginWindow_CLI\
+    $(PluginWindow_BATCH_LIBS)
+
+PluginWindow_PLUGIN_LIBDEPENDS =\
+    $(PluginWindow_LIBDIR)/libPluginWindow_XCLI.$(LIB_SUFFIX)\
+    $(PluginWindow_LIBDIR)/libPluginWindow_CLI.$(LIB_SUFFIX)\
+    $(PluginWindow_BATCH_LIBDEPENDS)
+
+############################################################################
+# PluginWindow full set of application libraries
+############################################################################
+
+PluginWindow_APP_LIBS =\
+    -lPluginWindow_main\
+    $(PluginWindow_PLUGIN_LIBS)
+
+PluginWindow_APP_LIBDEPENDS =\
+    $(PluginWindow_LIBDIR)/libPluginWindow_main.$(LIB_SUFFIX)\
+    $(PluginWindow_PLUGIN_LIBDEPENDS)
+
+PluginWindow_LIBDEPENDS = $(PluginWindow_APP_LIBDEPENDS)
+PluginWindow_LIBS = $(PluginWindow_APP_LIBS)
+

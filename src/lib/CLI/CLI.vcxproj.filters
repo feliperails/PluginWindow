@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{70a046ae-17a8-40e0-b3ac-50cec3908206}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{fc82256b-ecc9-4597-afa3-5c11a0119386}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="CLI Files">
+      <UniqueIdentifier>{46f7eeef-ee3e-40af-8ecb-d2b8258341ce}</UniqueIdentifier>
+      <Extensions>cli</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PluginWindow_cli.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginWindow_CLI_init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <gencli Include="..\..\..\lib\commands\PluginWindow.cli">
+      <Filter>CLI Files</Filter>
+    </gencli>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+  <Market_Segment Market_Segment_Name="Modeling">
+    <Product_Group Product_Group_Name="SKUA-GOCAD" Product_Group_Description=""
+    Categories="Custom Category for PluginWindow" OrderIndex="0">
+    >
+      <Companion_Product  
+            Function_Label="PluginWindow Option"
+            Description="Description for PluginWindow"
+            Hard_Dependencies="Foundation Modeling"
+            License_Package="NO_LICENSE"
+            Category="Custom Category for PluginWindow"
+            OrderIndex="0"            
+      />
+    </Product_Group>
+  </Market_Segment>
+</Catalog>

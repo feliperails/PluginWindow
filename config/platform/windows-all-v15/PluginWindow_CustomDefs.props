@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="UserMacros">
+    <COMSUPPLIB>comsupp.lib</COMSUPPLIB>
+    <PluginWindow_PLUGIN_LIBS>PluginWindow_XCLI.lib;PluginWindow_CLI.lib;PluginWindow_gapi.lib</PluginWindow_PLUGIN_LIBS>
+    <PluginWindow_APP_LIBS>PluginWindow_main.lib;$(PluginWindow_PLUGIN_LIBS)</PluginWindow_APP_LIBS>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <_PropertySheetDisplayName>PluginWindow - Custom Definitions</_PropertySheetDisplayName>
+  </PropertyGroup>
+  <ItemGroup>
+    <BuildMacro Include="COMSUPPLIB">
+      <Value>$(COMSUPPLIB)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PluginWindow_PLUGIN_LIBS">
+      <Value>$(PluginWindow_PLUGIN_LIBS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="PluginWindow_APP_LIBS">
+      <Value>$(PluginWindow_APP_LIBS)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

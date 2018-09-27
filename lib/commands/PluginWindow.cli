@@ -1,0 +1,26 @@
+
+#ifndef PluginWindow_cli
+#define PluginWindow_cli
+
+#include <lib/commands/history_types.cli>
+
+/***************************************************************************
+ The following command is an example that you can use to validate
+ your plugin. To test it, open the main window command terminal
+ and type PluginWindow_hello: a dialog should popup.
+ Warning: your plugin will not compile if no CLI command is defined.
+ Do not remove this command without replacing it with another one.
+****************************************************************************/
+
+Command PluginWindowHelloCommand {
+    implementation InteractiveCommand;
+    include "Gocad/interpreter/commands.h";
+    include "Gocad/qtools/gqactiondialog.h";
+    function PluginWindow_hello(String some_string = "Hello World!");
+    do() {
+        Logger::notice( Format( "Dialog said: \"%1\"" ) % some_string_ );
+
+    } ;
+}
+
+#endif

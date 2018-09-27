@@ -1,0 +1,17 @@
+
+############################################################################
+#
+# PluginWindow.menubars:
+#
+# This files defines the layout of the PluginWindow command menubars.
+# See the original Gocad.menubars for instructions on how to add new menu
+# options.
+#
+############################################################################
+
+
+MenuBar "PluginWindow" {
+    Menu "Test" {
+        Command "Hello World" PluginWindowHelloCommand
+    }
+}

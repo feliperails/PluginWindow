@@ -1,0 +1,18 @@
+LOCAL_CFLAGS =
+LOCAL_DEFINES = $(GRAPHIC_DEFINES) $(TOOLKIT_DEFINES)
+LOCAL_INCLUDES = -I. $(GRAPHIC_INCLUDES) $(TOOLKIT_INCLUDES)
+
+LOCAL_LIBDEPENDS =\
+    $(Gocad_LIBDIR)/libGocad_interpreter.$(LIB_SUFFIX)\
+    $(Gocad_GRAPHIC_LIBDEPENDS)\
+    $(Gocad_BATCH_LIBDEPENDS)
+
+LOCAL_LIBRARIES =\
+    -lGocad_interpreter\
+    $(Gocad_GRAPHIC_LIBS)\
+    $(Gocad_BATCH_LIBS)
+
+LDLIBS = $(GRAPHIC_SYSLIBS) $(TOOLKIT_SYSLIBS) $(SYSLIBS)
+
+make:; @$(GOCADROOT)/devtools/Makemake -n PluginWindow_CLI -l
+

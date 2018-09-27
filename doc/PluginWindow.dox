@@ -1,0 +1,23 @@
+
+# PluginWindow.dox
+# Configuration file for generating the whole PluginWindow SDK documentation
+
+@INCLUDE_PATH       = "$(GOCADHOME)/doc" "$(GOCADROOT)/doc"
+@INCLUDE            = devkit.dox
+PROJECT_NAME        = "PluginWindow"
+PROJECT_NUMBER      = "Version 1.0"
+OUTPUT_DIRECTORY    = "$(GOCADHOME)/doc/devkit/PluginWindow"
+GENERATE_TAGFILE    = "$(GOCADHOME)/doc/devkit/PluginWindow.tag"
+INPUT               = "$(GOCADHOME)/include/PluginWindow"  "$(GOCADHOME)/src/lib" 
+
+HTML_HEADER         =
+HTML_FOOTER         =
+HTML_EXTRA_STYLESHEET =
+PROJECT_LOGO        =
+
+EXAMPLE_PATH        = 
+EXAMPLE_PATTERNS    = 
+IMAGE_PATH          =
+
+PREDEFINED          += "_PluginWindow_gapi_decl="
+

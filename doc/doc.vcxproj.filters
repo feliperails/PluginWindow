@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dox  Files">
+      <UniqueIdentifier>{239ed5c8-0ee6-4e49-a9d2-fe2c37b14000}</UniqueIdentifier>
+      <Extensions>*.dox</Extensions>
+    </Filter>
+    <Filter Include="Html Files">
+      <UniqueIdentifier>{e00b8c5d-53e3-4c91-904b-f3697a36a530}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <DevkitDocCompiler Include="PluginWindow.dox">
+      <Filter>Dox  Files</Filter>
+    </DevkitDocCompiler>
+    <DevkitDocCompiler Include="PluginWindowInternal.dox">
+      <Filter>Dox  Files</Filter>
+    </DevkitDocCompiler>
+  </ItemGroup>
+</Project>
